@@ -1,139 +1,244 @@
-body { margin: 0; }
+/* CSS html et body */
+
+html, body {margin:0; padding:0}
+body {
+background-color:white;
+margin:0 0 0 0;
+}
+
+/* CSS titres et paragraphes */
+h1 {
+	font-family: verdana, sans-serif;
+	font-size: 100%;
+	color: black;
+	background-color: transparent;
+	text-align: left;
+}
+
+h2 {
+	font-family: verdana, sans-serif;
+	font-size: 100%;
+	color: black;
+	background-color: transparent;
+	text-align: left;
+}
+
+h3 {
+	font-family: verdana, sans-serif;
+	font-size: 100%;
+	color: white;
+	background-color: transparent;
+	text-align: left;
+}
+
+p {
+	font-family: verdana, sans-serif;
+	font-size: 100%;
+	color: black;
+	background-color: transparent;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 
 /* CSS navbar */
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: #333;
-		width: 100%;
-		position: fixed;
-		top: 0;
-		z-index: 10;
-	  }
-	  
-	  li {
-		float: left;
-	  }
-	  
-	  li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	  }
-	  
-	  li a:hover {
-		background-color: #111;
-	  }
-	  
-	  .active {
-		background-color: #4CAF50;
-	  }
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
 
-/* fin CSS navbar*/ 
+li {
+	float: left;
+}
 
-/* CSS slider*/	
-	.slider { 
-		overflow: hidden;
-		height: 100vh;
-	 }
-	.slider figure img { width: 20%; float: left; }
-	.slider figure { 
-	  position: relative;
-	  width: 500%;
-	  margin: 0;
-	  left: 0;
-	  text-align: left;
-	  font-size: 0;
-	  animation: 30s slidy infinite; 
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #000000;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+
+
+/* CSS slider*/
+.slider {
+	overflow: hidden;
+	height: 100vh;
+}
+
+.slider figure img {
+	width: 20%;
+	float: left;
+}
+
+.slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 30s slidy infinite;
+}
+
+
+@keyframes slidy {
+	0% {
+		left: 0%;
 	}
 
-	
-	@keyframes slidy {
-		0% { left: 0%; }
-		20% { left: 0%; }
-		25% { left: -100%; }
-		45% { left: -100%; }
-		50% { left: -200%; }
-		70% { left: -200%; }
-		75% { left: -300%; }
-		95% { left: -300%; }
-		100% { left: -400%; }
-		}
-/* fin CSS navbar */
+	20% {
+		left: 0%;
+	}
+
+	25% {
+		left: -100%;
+	}
+
+	45% {
+		left: -100%;
+	}
+
+	50% {
+		left: -200%;
+	}
+
+	70% {
+		left: -200%;
+	}
+
+	75% {
+		left: -300%;
+	}
+
+	95% {
+		left: -300%;
+	}
+
+	100% {
+		left: -400%;
+	}
+}
+
+
 
 /* paragraphe */
-.paragraphe{
+.paragraphe {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: auto auto;
-	grid-gap: 0px;
+	grid-gap: 10px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	height: 50vh;
 }
 
-.paragraphe img{
+.paragraphe img {
 	display: block;
 	width: 80%;
 	margin: auto;
-	
-	}
 
-.texte_paragraphe{
+}
+
+.texte_paragraphe {
 	display: block;
 	width: 80%;
 	margin: 10px;
 	justify-content: safe;
-}	
-/* fin CSS paragraphe */
+}
+
+
 
 /* parallaxe */
 .parallax-window {
-    min-height: 50vh;
-    background: transparent;
+	min-height: 50vh;
+	background: transparent;
 }
-/* fin CSS parallaxe */
+
+
 
 /* galerie */
 .galerie {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto auto;
-	grid-gap: 10px;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto auto;
+	row-gap: 50px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-.galerie img{
+
+.galerie_title h1{
+	text-align: center;
+}
+
+.galerie img {
 	display: block;
 	width: 80%;
 	margin: auto;
 }
-/* fin CSS galerie */
+
+
 
 /*footer 1 */
 .footer1 {
-    display: grid;
-    grid-template-columns: 25% 25% 50%;
-    grid-template-rows: auto;
+	display: grid;
+	grid-template-columns: 25% 25% 50%;
+	grid-template-rows: auto;
 	grid-gap: 10px;
-	margin:auto;	
+	margin: auto;
+	padding: 10px 10px 10px 10px;
+	background-color: #333;
 }
 
-.liens_footer{
-	font:Verdana, Geneva, sans-serif;
-font-size:18px;
-text-align:left;
-height:50px;
-display: table;
+
+.footer1 a{
+	font-family: verdana, sans-serif;
+	font-size: 100%;
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.footer1 a:hover {
+	font-family: verdana, sans-serif;
+	font-size: 100%;
+	color: white;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+
+.box {
+	display: block;
+	margin: auto;
+	}
+
+/*footer 2 */
+.footer2 {
+	display: block;
 width: 100%;
-}
-.footer 1 .liens_footer span {
-/* Aligne le texte verticalement au milieu */
-vertical-align:middle;
-display: table-cell;
-}
-/* fin CSS galerie */
+height: 50px;
+	background-color: #000000;
+}	
+
+.footer2 h3{
+	text-align: center;
+
+} 
