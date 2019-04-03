@@ -126,14 +126,14 @@
 			<a href="#">blbalblbalblbalblballlaablblblblblblblblblblblblblblblbl</a><br>
 			<a href="#">blbalblbalblbalblballlaablblblblblblblblblblblblblblblbl</a><br>
 			<a href="#">blbalblbalblbalblballlaablblblblblblblblblblblblblblblbl</a><br>
-			<a href="#">blbalblbalblbalblballlaablblblblblblblblblblblblblblblbl</a><br>
+			<a href="#">blbalblbalblbalblballlaablblblblblblblblblblblblblblblbl</a>
 		</div>
 	</div>
 
 	<!-- footer 2 -->
 	<div class="footer2">
-	<h3>Copyright © 2019 - Gaël Ponsard</h3>
-</div>
+		<h3>Copyright © 2019 - Gaël Ponsard</h3>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
